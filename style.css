@@ -1,0 +1,293 @@
+/* *{
+    margin: 10;
+    padding: 0;
+} */
+:root{
+    --navbar-height: 60px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* left: 0px; */
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    /* font-weight: bolder; */
+}
+#navbar ul li a{
+    color:white;
+    text-decoration: none;
+    padding: 9px 19px;
+    display: block;
+    border-radius: 25px;
+}
+#navbar ul li a:hover{
+    color: dimgray;
+    background-color: whitesmoke;
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 2;
+    top: 0px;
+    left: 0px;
+}
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+    height:48px;
+    margin: 1px 20px;
+    width: 100px;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height:332px ;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("clothbackground.jpg") no-repeat center center/cover;
+    height: 76%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    display: block;
+    font-family: 'Bree Serif', serif;
+    margin:40px 30px;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+#products{
+    margin: 34px;
+    display: flex;
+}
+#products-container::before{
+    content: "";
+    position: absolute;
+    background:url("product2.jpeg") no-repeat center center/cover;
+    width: 100%;
+    height: 85%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+}
+#products .box{
+    border-radius: 58px;
+    margin: 8px;
+    border: 2px solid rosybrown;
+    padding: 9px 24px;
+    background-color: lavender;
+    box-shadow: 4px 4px 4px rosybrown;
+}
+#products-container h1{
+    color: black;
+}
+#products .box:hover{
+    transform: scale(1.19);
+}
+#products .box img{
+    height: 151px;
+    margin: auto;
+    display: block;
+}
+#products .box h2{
+    font-family: 'Bree Serif', serif;
+}
+#products .box p{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+#client-section{
+    height: 388px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url("clientbackground.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 71%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 20px;
+
+}
+#clients img{
+    height: 245px;
+}
+#help-centre{
+    height: 564px;
+}
+#help-centre::before{
+    content: "";
+    position: absolute;
+    background:url("help1.jpg") no-repeat center center/cover;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+}
+.h-secondary p{
+    color:rgb(224, 47, 47);
+    padding-left: 139px;
+    font-weight: bold;
+    font-size: large;
+}
+.h-secondary summary{
+display: flex;
+margin: 3px;
+padding-left: 84px;
+font-family: 'Bree Serif', serif;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+    cursor: pointer;
+}
+#register{
+    position: relative;
+    /* height: 634px; */
+}
+#registration-box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom:34px ;
+}
+#registration-box input,
+#registration-box textarea{
+    width:100%;
+    padding:0.5rem;
+    border-radius: 9px;
+    
+}
+#registration-box form{
+    width: 40%;
+}
+#registration-box label{
+    font-size: large;
+    font-weight: lighter;
+    font-family: 'Bree Serif', serif;
+}
+#registration-box button .btn{
+display: block;
+
+text-align: center ;
+}
+#register::before{
+    content: "";
+    position: absolute;
+    background:url("register.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 106%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+}
+#contact{
+    margin: 34px;
+    display: flex;
+}
+#contact-container::before{
+    content: "";
+    position: absolute;
+    background:url("Contact-Us.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 53%;
+    z-index: -1;
+    opacity: 0.7;
+    left: 0px;
+}
+#contact .reach{
+    margin: 8px;
+    padding: 9px 24px;
+}
+#contact-container h1{
+    color: black;
+}
+#contact .reach img{
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+#contact .reach a:hover{
+    color: blue;
+}
+#contact .reach p{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    left: 0px;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 29px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+} 
+.h-secondry {
+    font-size: 1.8rem;
+    padding: 10px;
+    text-align: center;
+}
+.btn{
+    border-radius: 7px;
+    padding: 6px 20px;
+    border: 2px solid black;
+    margin: 17px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:darksalmon;
+    color: black;
+}
+.center{
+    text-align: center;
+}
+#products .box h2{
+    font-family: 'Bree Serif', serif;
+}
